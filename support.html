@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Creator - 帮助与支持</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            color: white;
+            padding: 40px 0;
+        }
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .header p {
+            opacity: 0.9;
+            font-size: 18px;
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        .card h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #1d1d1f;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e5e5e5;
+            padding: 15px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-q {
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 8px;
+        }
+        .faq-a {
+            color: #424245;
+        }
+        .steps {
+            counter-reset: step;
+        }
+        .step {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .step-num {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .step-content h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .step-content p {
+            color: #666;
+            font-size: 14px;
+        }
+        code {
+            background: #f5f5f7;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'SF Mono', Monaco, monospace;
+            font-size: 13px;
+        }
+        .provider-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .provider {
+            background: #f5f5f7;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .provider-name {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .provider-url {
+            font-size: 12px;
+            color: #666;
+        }
+        .contact-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+        .contact-card h2 {
+            color: white;
+            justify-content: center;
+        }
+        .contact-card p {
+            opacity: 0.9;
+        }
+        .contact-card a {
+            color: white;
+            font-weight: 600;
+        }
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #764ba2;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>✨ Skill Creator</h1>
+            <p>帮助与支持</p>
+        </div>
+
+        <div class="card">
+            <h2>🚀 快速开始</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h3>获取 API Key</h3>
+                        <p>前往 LLM 服务商官网注册并获取 API Key</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h3>配置服务商</h3>
+                        <p>打开应用 → 设置 → 选择服务商 → 粘贴 API Key</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h3>开始创建</h3>
+                        <p>选择模板或描述你想要的 Skill，与 AI 对话完成创建</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <div class="step-content">
+                        <h3>导出分享</h3>
+                        <p>在工作区查看生成的文件，一键导出 ZIP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🔑 支持的 LLM 服务商</h2>
+            <p>本应用支持以下 OpenAI 兼容 API 格式的服务商：</p>
+            <div class="provider-list">
+                <div class="provider">
+                    <div class="provider-name">DeepSeek</div>
+                    <div class="provider-url">api.deepseek.com</div>
+                </div>
+                <div class="provider">
+                    <div class="provider-name">Kimi (月之暗面)</div>
+                    <div class="provider-url">api.moonshot.cn</div>
+                </div>
+                <div class="provider">
+                    <div class="provider-name">智谱 AI</div>
+                    <div class="provider-url">open.bigmodel.cn</div>
+                </div>
+                <div class="provider">
+                    <div class="provider-name">OpenAI 通用</div>
+                    <div class="provider-url">自定义 URL</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>❓ 常见问题</h2>
+            
+            <div class="faq-item">
+                <div class="faq-q">Q: 为什么显示"API Key 未设置"？</div>
+                <div class="faq-a">A: 请前往「设置」页面配置您的 LLM 服务商和 API Key。本应用需要您自行提供 API Key 才能使用。</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-q">Q: 如何获取 API Key？</div>
+                <div class="faq-a">A: 访问对应服务商官网注册账号：DeepSeek (deepseek.com)、Kimi (moonshot.cn)、智谱 (zhipuai.cn)，在控制台创建 API Key。</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-q">Q: 显示"HTTP 401"错误？</div>
+                <div class="faq-a">A: API Key 无效或已过期，请检查是否正确复制，或前往服务商控制台重新生成。</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-q">Q: 生成速度很慢？</div>
+                <div class="faq-a">A: 创建 Skill 需要多轮 AI 对话，复杂的 Skill 可能需要 1-3 分钟。您可以在进度条看到实时状态。</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-q">Q: 如何导出生成的 Skill？</div>
+                <div class="faq-a">A: 进入「工作区」标签页，点击右上角导出按钮，即可将所有文件打包为 ZIP。</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-q">Q: 数据存储在哪里？</div>
+                <div class="faq-a">A: 所有数据（包括 API Key、对话历史、生成的文件）都只存储在您的设备本地，不会上传到任何服务器。</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-q">Q: 支持 iPad 吗？</div>
+                <div class="faq-a">A: 目前为 iPhone 优化，iPad 可兼容运行。</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>💡 使用技巧</h2>
+            <ul style="margin-left: 20px; color: #424245;">
+                <li style="margin-bottom: 10px;">使用内置模板可以更快开始，它们已经包含了优化的提示词</li>
+                <li style="margin-bottom: 10px;">描述 Skill 时越具体越好，包括目标用户、功能需求、输出格式等</li>
+                <li style="margin-bottom: 10px;">如果 AI 提出结构化问题，按向导一步步填写可以获得更精准的结果</li>
+                <li style="margin-bottom: 10px;">生成完成后可以在工作区预览和编辑文件</li>
+                <li style="margin-bottom: 10px;">推荐使用 DeepSeek 或 Kimi，性价比高且中文能力强</li>
+            </ul>
+        </div>
+
+        <div class="card contact-card">
+            <h2>📧 联系我们</h2>
+            <p>如果您有任何问题或建议，欢迎联系我们</p>
+            <a href="mailto:support@example.com" class="btn">发送邮件</a>
+        </div>
+    </div>
+</body>
+</html>
